@@ -43,6 +43,7 @@
 
   (with-visit-file (concat editorconfig-ert-dir
                            "3_space.txt")
+    (message "%S" editorconfig-mode)
     (should (eq tab-width 3))
     (should (eq indent-tabs-mode nil)))
 
