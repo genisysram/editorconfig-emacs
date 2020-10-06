@@ -45,6 +45,7 @@
                            "3_space.txt")
     (message "%S" editorconfig-mode)
     (message "%S" major-mode)
+    (message "%S" editorconfig-properties-hash)
     (should (eq tab-width 3))
     (should (eq indent-tabs-mode nil)))
 
