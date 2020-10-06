@@ -46,6 +46,10 @@
     (message "%S" editorconfig-mode)
     (message "%S" major-mode)
     (message "%S" editorconfig-properties-hash)
+    (message "%S" buffer-file-name)
+    (message "%S"
+             (editorconfig-core-get-nearest-editorconfig
+              default-directory))
     (should (eq tab-width 3))
     (should (eq indent-tabs-mode nil)))
 
